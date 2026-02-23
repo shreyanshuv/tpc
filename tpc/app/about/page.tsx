@@ -180,7 +180,7 @@ export default function AboutPage() {
 
             <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
               <Image
-                src="/images/team-meeting.jpg"
+                src="/images/tpc_team.jpg"
                 alt="TPC team meeting"
                 fill
                 className="object-cover"
@@ -222,70 +222,64 @@ export default function AboutPage() {
       </section>
 
       {/* Timeline */}
-      <section className="bg-card py-24">
-        <div className="mx-auto max-w-7xl px-4 lg:px-8">
-          <div className="mx-auto max-w-2xl text-center">
-            <p className="text-sm font-semibold uppercase tracking-wider text-primary">
-              Our Journey
-            </p>
-            <h2 className="mt-2 font-heading text-3xl font-bold text-foreground lg:text-4xl">
-              Milestones Along the Way
-            </h2>
-          </div>
+     <section className="bg-card py-24">
+  <div className="mx-auto max-w-7xl px-4 lg:px-8">
+    <div className="mx-auto max-w-2xl text-center">
+      <p className="text-sm font-semibold uppercase tracking-wider text-primary">
+        Our Journey
+      </p>
+      <h2 className="mt-2 font-heading text-3xl font-bold text-foreground lg:text-4xl">
+        Milestones Along the Way
+      </h2>
+    </div>
 
-          <div className="relative mt-16">
-            <div className="absolute left-4 top-0 hidden h-full w-px bg-border md:left-1/2 md:block" />
-            <div className="space-y-12">
-              {timeline.map((item, i) => (
-                <div
-                  key={item.year}
-                  className={`relative flex flex-col gap-4 md:flex-row md:gap-12 ${
-                    i % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-                  }`}
-                >
-                  <div className="flex-1 md:text-right">
-                    {i % 2 === 0 ? (
-                      <div className="rounded-xl border border-border bg-background p-6">
-                        <span className="font-heading text-sm font-bold text-primary">
-                          {item.year}
-                        </span>
-                        <h3 className="mt-2 font-heading text-lg font-semibold text-foreground">
-                          {item.title}
-                        </h3>
-                        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                          {item.description}
-                        </p>
-                      </div>
-                    ) : (
-                      <div className="hidden md:block" />
-                    )}
-                  </div>
+    <div className="relative mt-16">
+      {/* Center Line */}
+      <div className="absolute left-1/2 top-0 h-full w-[2px] -translate-x-1/2 bg-border" />
 
-                  <div className="absolute left-4 hidden h-4 w-4 -translate-x-1/2 rounded-full border-4 border-primary bg-background md:static md:left-auto md:mt-6 md:block md:shrink-0 md:translate-x-0" />
-
-                  <div className="flex-1">
-                    {i % 2 !== 0 ? (
-                      <div className="rounded-xl border border-border bg-background p-6">
-                        <span className="font-heading text-sm font-bold text-primary">
-                          {item.year}
-                        </span>
-                        <h3 className="mt-2 font-heading text-lg font-semibold text-foreground">
-                          {item.title}
-                        </h3>
-                        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                          {item.description}
-                        </p>
-                      </div>
-                    ) : (
-                      <div className="hidden md:block" />
-                    )}
-                  </div>
-                </div>
-              ))}
+      <div className="space-y-12">
+        {timeline.map((item, i) => (
+          <div key={item.year} className="relative flex items-center">
+            
+            {/* LEFT SIDE */}
+            <div className={`w-1/2 pr-8 ${i % 2 !== 0 && "invisible"}`}>
+              <div className="rounded-xl border border-border bg-background p-6">
+                <span className="text-sm font-bold text-primary">
+                  {item.year}
+                </span>
+                <h3 className="mt-2 text-lg font-semibold text-foreground">
+                  {item.title}
+                </h3>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  {item.description}
+                </p>
+              </div>
             </div>
+
+            {/* DOT */}
+            <div className="absolute left-1/2 h-4 w-4 -translate-x-1/2 rounded-full border-4 border-primary bg-background" />
+
+            {/* RIGHT SIDE */}
+            <div className={`w-1/2 pl-8 ${i % 2 === 0 && "invisible"}`}>
+              <div className="rounded-xl border border-border bg-background p-6">
+                <span className="text-sm font-bold text-primary">
+                  {item.year}
+                </span>
+                <h3 className="mt-2 text-lg font-semibold text-foreground">
+                  {item.title}
+                </h3>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  {item.description}
+                </p>
+              </div>
+            </div>
+
           </div>
-        </div>
-      </section>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
     </>
   )
 }

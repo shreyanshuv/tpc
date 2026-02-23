@@ -46,6 +46,7 @@ const facultyAdvisors: TeamMember[] = [
     department: "Computer Engineering",
     initials: "SK",
     color: "bg-accent",
+    image:"/images/Shrutika_Khobragade.jpg.jpg"
   },
   {
     name: "Supriya Shigwan",
@@ -53,13 +54,15 @@ const facultyAdvisors: TeamMember[] = [
     department: "Electrical Engineering",
     initials: "SS",
     color: "bg-primary",
+    image:"/images/Supriya_Shigwan.jpg.jpg"
   },
   {
     name: "Priya Tambe",
     role: "Faculty Co-ordinator",
-    department: "EXTC Department",
+    department: "ECS Department",
     initials: "PT",
     color: "bg-accent",
+    image:"/images/Priya_Tambe.jpg.jpg"
   },
   {
     name: "Shamna Sadanand",
@@ -67,6 +70,7 @@ const facultyAdvisors: TeamMember[] = [
     department: "Information Technology",
     initials: "SS",
     color: "bg-primary",
+    image:"/images/Shamna_Sadanand.jpg.jpg"
   },
   {
     name: "Sunil Singh Rajput",
@@ -74,6 +78,7 @@ const facultyAdvisors: TeamMember[] = [
     department: "Mechanical Engineering",
     initials: "SR",
     color: "bg-accent",
+    image:"/images/Sunil_Singh_Rajput.jpg.jpg"
   },
 
 ]

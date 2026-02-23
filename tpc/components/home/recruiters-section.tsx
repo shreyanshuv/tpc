@@ -43,7 +43,7 @@ export function RecruitersSection() {
               {carouselCompanies.map((company, idx) => (
                 <div
                   key={`carousel-1-${idx}`}
-                  className="group flex flex-col items-center justify-center gap-2 rounded-lg bg-secondary/20 p-6 transition-all hover:bg-secondary/30 min-w-max"
+                  className="group flex flex-col items-center justify-center gap-2 rounded-lg bg-secondary/20 p-6 transition-all hover:bg-green-300 hover:scale-110 min-w-max"
                 >
                   <div className="relative h-16 w-36 flex items-center justify-center">
                     <Image
@@ -65,7 +65,7 @@ export function RecruitersSection() {
               {carouselCompanies.map((company, idx) => (
                 <div
                   key={`carousel-2-${idx}`}
-                  className="group flex flex-col items-center justify-center gap-2 rounded-lg bg-secondary/20 p-6 transition-all hover:bg-secondary/30 min-w-max"
+                  className="group flex flex-col items-center justify-center gap-2 rounded-lg bg-secondary/20 p-6 transition-all hover:bg-green-300 hover:scale-110 min-w-max"
                 >
                   <div className="relative h-16 w-36 flex items-center justify-center">
                     <Image

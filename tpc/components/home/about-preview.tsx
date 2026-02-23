@@ -18,7 +18,7 @@ export function AboutPreview() {
           <div className="relative">
             <div className="relative aspect-[4/3] overflow-hidden rounded-lg border border-border/70 bg-secondary/50">
               <Image
-                src="/images/placement-drive.jpg"
+                src="/images/tpc_team.jpg"
                 alt="Placement drive at PHCET"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-300"
